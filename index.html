@@ -7,11 +7,12 @@
     <title>Assignment 3</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/44c2a4ae88.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="w-11/12 md:w-10/12 mx-auto">
-    <header>
-        <nav class="py-2 border">
+<body>
+    <header class="w-11/12 md:w-10/12 mx-auto">
+        <nav class="py-2">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -56,12 +57,112 @@
             </div>
         </nav>
     </header>
-    <main>
-
+    <main class="w-11/12 md:w-10/12 mx-auto">
+        <!-- banner section -->
+        <section>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="../images/1.png" class="w-full md:h-[570px]" />
+                    <div class="absolute flex justify-center md:justify-start gap-2  left-5 right-5 bottom-10 ">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="../images/banner.jpg" class="w-full md:h-[570px] rounded-2xl" />
+                    <div class="absolute flex justify-center md:justify-start gap-2  left-5 right-5 bottom-10">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Professional Hockeys Club -->
+        <section class="mt-24 pb-20">
+            <div class="title text-center">
+                <h1 class="text-[#131318] text-[22px] lg:text-[36px] font-bold">Professional Hockeys Club</h1>
+                <p class="text-[rgba(19, 19, 24, 0.60)] text-[14px] lg:text-[16px] lg:w-[600px] mx-auto">Elite hockey
+                    awaits! Join our Professional Hockey Club for top-tier action, skill, and teamwork as we chase glory
+                    on the ice.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-4 pt-10 text-center gap-10">
+                <div>
+                    <div class="radial-progress text-[#FF4240]" style="--value:87; --size:6rem" role="progressbar">87%
+                    </div>
+                    <h1 class="text-[#131318] text-[20px] font-bold mt-4">Prayer Facility</h1>
+                    <p class="text-[#131318] text-[16px] mt-3"> Find inner focus at our tranquil Prayer Facility.</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-[#49D293]" style="--value:95; --size:6rem" role="progressbar">95%
+                    </div>
+                    <h1 class="text-[#131318] text-[20px] font-bold mt-4">Experienced Coach</h1>
+                    <p class="text-[#131318] text-[16px] mt-3">Receive professional guidance from our Experienced
+                        Coaches.</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-[#ffb546]" style="--value:90; --size:6rem" role="progressbar">90%
+                    </div>
+                    <h1 class="text-[#131318] text-[20px] font-bold mt-4">Senior Player</h1>
+                    <p class="text-[#131318] text-[16px] mt-3">Gain insights and experience from the Senior Player zone.
+                    </p>
+                </div>
+                <div>
+                    <div class="radial-progress text-[#4c8df1]" style="--value:80; --size:6rem" role="progressbar">80%
+                    </div>
+                    <h1 class="text-[#131318] text-[20px] font-bold mt-4">Training Ground</h1>
+                    <p class="text-[#131318] text-[16px] mt-3">Elevate your game at the state-of-the-art Training
+                        Ground.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-
-    </footer>
+    <section class="bg-[#131318]">
+        <footer class="footer w-10/12 mx-auto py-24 text-white ">
+            <aside class="text-center lg:text-left mx-auto md:mx-0">
+                <div class="text-center lg:text-left mx-auto lg:mx-0">
+                    <h1 class="text-[#fff] text-[22px] lg:text-[36px] font-bold">Get In Touch</h1>
+                </div>
+                <p class="w-[340px] mt-6">Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor.
+                    Purus urna in sit nullam proin. </p>
+                <div class="mx-auto md:mx-0 text-center lg:text-left">
+                    <p class="text-[17px] mt-6"><i class="fa-regular fa-envelope text-[#ff4240]"></i> support@hockey.com
+                    </p>
+                    <p class="text-[17px] mt-3"><i class="fa-solid fa-phone text-[#ff4240]"></i> +8801112222
+                    </p>
+                </div>
+            </aside>
+            <div class="flex mx-auto text-center lg:text-left gap-24 lg:gap-40">
+                <nav>
+                    <header class="footer-title">Services</header>
+                    <ul class="leading-10">
+                        <li><a class="link link-hover">Branding</a></li>
+                        <li><a class="link link-hover">Design</a></li>
+                        <li><a class="link link-hover">Marketing</a></li>
+                        <li><a class="link link-hover">Advertisement</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <header class="footer-title">Company</header>
+                    <ul class="leading-10">
+                        <li><a class="link link-hover">Company</a></li>
+                        <li><a class="link link-hover">Contact</a></li>
+                        <li><a class="link link-hover">Job</a></li>
+                        <li><a class="link link-hover">Advertisement</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="mx-auto lg:text-left text-center">
+                <div>
+                    <header class="footer-title">Legal</header>
+                    <ul class="leading-10">
+                        <li><a class="link link-hover">Terms of use</a></li>
+                        <li><a class="link link-hover">Privacy policy</a></li>
+                        <li><a class="link link-hover">Cookie policy</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+    </section>
 </body>
 
 </html>
